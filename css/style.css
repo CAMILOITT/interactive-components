@@ -93,7 +93,7 @@ button {
   font-size: var(--Font-size-paragraph);
   color: var(--Light-Grey);
 }
-.form__containerBtn {
+.card__containerBtn {
   margin: 20px 0;
   display: flex;
   justify-content: space-around;
@@ -111,7 +111,7 @@ button {
   background: var(--Medium-Grey);
   color: var(--Light-Grey);
 }
-.form__submit {
+.card__submit {
   width: 100%;
   background: var(--Orange);
   color: var(--White);
@@ -130,22 +130,71 @@ button {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.form__submit:hover {
+.card__submit:hover {
   color: var(--Orange);
   background: var(--White);
 }
 /* selected */
-
-.selected {
-  background: var(--Orange);
+.containerBtn__btn:focus {
+  background: var(--Light-Grey);
   color: var(--White);
 }
-.nextPrev {
-  background: var(--Light-Grey);
+.containerBtn__btn:hover {
+  background: var(--Orange);
   color: var(--White);
 }
 
 /* card  */
+.card__back {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: var(--Orange);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* back */
+
+.back__broadHead,
+.back__shaft {
+  display: block;
+  position: absolute;
+}
+.back__broadHead {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  top: 5.7px;
+  left: 12.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.back__shaft {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 7px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
 .card__illustrationThank {
   width: 160px;
   margin: 10px auto;
@@ -169,13 +218,23 @@ button {
   text-align: center;
 }
 
+/* hidden */
+
+.hidden {
+  display: none;
+}
+
+/* attribution */
 .attribution {
   font-size: 11px;
   text-align: center;
   position: absolute;
   inset: auto 0 15px 0;
   margin: auto;
+  color: white;
+  font-size: 13px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Orange);
+  text-decoration: none;
 }

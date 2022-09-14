@@ -20,36 +20,38 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="card">
+    <div class="card" id="card-rank">
       <img src="./images/icon-star.svg" alt="star" class="card__star" />
       <h2 class="card__title">How did we do?</h2>
       <p class="card__information">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <form class="card__form" id="form">
-        <div class="form__containerBtn">
-          <button class="containerBtn__btn" id="btnValue1">1</button>
-          <button class="containerBtn__btn" id="btnValue2">2</button>
-          <button class="containerBtn__btn" id="btnValue3">3</button>
-          <button class="containerBtn__btn" id="btnValue4">4</button>
-          <button class="containerBtn__btn" id="btnValue5">5</button>
-        </div>
-        <button class="form__submit">Submit</button>
-      </form>
+      <div class="card__containerBtn">
+        <button class="containerBtn__btn">1</button>
+        <button class="containerBtn__btn">2</button>
+        <button class="containerBtn__btn">3</button>
+        <button class="containerBtn__btn">4</button>
+        <button class="containerBtn__btn">5</button>
+      </div>
+      <button class="card__submit" id="submit">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="card">
+    <div class="card hidden" id="card-thank">
+      <button class="card__back" id="back">
+        <span class="back__broadHead"></span>
+        <span class="back__shaft"></span>
+      </button>
       <img
         class="card__illustrationThank"
         src="./images/illustration-thank-you.svg"
         alt=""
       />
-      <span class="card__textResult"
-        >You selected <span class="textResult__result"></span> out of 5</span
-      >
+      <p class="card__textResult">
+        You selected <span id="rank">5</span> out of 5
+      </p>
       <h2 class="card__title card__title-thank">Thank you!</h2>
       <p class="card__information card__information-thank">
         We appreciate you taking the time to give a rating. If you ever need
@@ -62,7 +64,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Camilo Torres</a>.
     </div>
 
     <script src="./js/main.js"></script>
