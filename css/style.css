@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 button {
   cursor: pointer;
@@ -34,7 +35,7 @@ button {
 
 /* card  */
 .card {
-  width: clamp(230px, 55%, 400px);
+  width: clamp(230px, 70%, 400px);
   background: var(--Dark-Blue);
   padding: 30px;
   border-radius: 20px;
@@ -96,8 +97,10 @@ button {
 .card__containerBtn {
   margin: 20px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .containerBtn__btn {
   width: 45px;
