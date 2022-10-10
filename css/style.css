@@ -21,7 +21,7 @@
   box-sizing: border-box;
   font-family: 'Overpass', sans-serif;
 }
-body {
+.main {
   height: 100vh;
   background: var(--Very-Dark-Blue);
   display: flex;
@@ -32,7 +32,6 @@ body {
 button {
   cursor: pointer;
 }
-
 /* card  */
 .card {
   width: clamp(230px, 70%, 400px);
@@ -240,4 +239,5 @@ button {
 .attribution a {
   color: var(--Orange);
   text-decoration: none;
+  font-weight: bold;
 }

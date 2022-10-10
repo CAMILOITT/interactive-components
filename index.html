@@ -3,69 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Rating state start -->
-    <div class="card" id="card-rank">
-      <img src="./images/icon-star.svg" alt="star" class="card__star" />
-      <h2 class="card__title">How did we do?</h2>
-      <p class="card__information">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="card__containerBtn">
-        <button class="containerBtn__btn">1</button>
-        <button class="containerBtn__btn">2</button>
-        <button class="containerBtn__btn">3</button>
-        <button class="containerBtn__btn">4</button>
-        <button class="containerBtn__btn">5</button>
+    <main class="main">
+      <div class="card" id="card-rank">
+        <img src="./images/icon-star.svg" alt="star" class="card__star" />
+        <h2 class="card__title">How did we do?</h2>
+        <p class="card__information">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="card__containerBtn">
+          <button class="containerBtn__btn">1</button>
+          <button class="containerBtn__btn">2</button>
+          <button class="containerBtn__btn">3</button>
+          <button class="containerBtn__btn">4</button>
+          <button class="containerBtn__btn">5</button>
+        </div>
+        <button class="card__submit" id="submit">Submit</button>
       </div>
-      <button class="card__submit" id="submit">Submit</button>
-    </div>
-    <!-- Rating state end -->
+      <!-- Rating state end -->
+      <!-- Thank you state start -->
+      <div class="card hidden" id="card-thank">
+        <button class="card__back" id="back">
+          <span class="back__broadHead"></span>
+          <span class="back__shaft"></span>
+        </button>
+        <img
+          class="card__illustrationThank"
+          src="./images/illustration-thank-you.svg"
+          alt=""
+        />
+        <p class="card__textResult">
+          You selected <span id="rank">5</span> out of 5
+        </p>
+        <h2 class="card__title card__title-thank">Thank you!</h2>
+        <p class="card__information card__information-thank">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
 
-    <!-- Thank you state start -->
-    <div class="card hidden" id="card-thank">
-      <button class="card__back" id="back">
-        <span class="back__broadHead"></span>
-        <span class="back__shaft"></span>
-      </button>
-      <img
-        class="card__illustrationThank"
-        src="./images/illustration-thank-you.svg"
-        alt=""
-      />
-      <p class="card__textResult">
-        You selected <span id="rank">5</span> out of 5
-      </p>
-      <h2 class="card__title card__title-thank">Thank you!</h2>
-      <p class="card__information card__information-thank">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-    </div>
-    <!-- Thank you state end -->
-
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/CAMILOITT">Camilo Torres</a>.
-    </div>
+    </footer>
 
     <script src="./js/main.js"></script>
   </body>
